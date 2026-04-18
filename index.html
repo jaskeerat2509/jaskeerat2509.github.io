@@ -127,7 +127,6 @@ footer{background:var(--bg);color:var(--ink3);padding:16px 56px;display:flex;jus
   .tli{grid-template-columns:1fr;gap:4px}
   .card{grid-template-columns:1fr}.card-left{border-right:none;border-bottom:1px solid var(--line)}
   .pao{grid-template-columns:1fr}
-  .contact-wrap{grid-template-columns:1fr;gap:32px;padding-top:64px;padding-bottom:64px}
   .contact-resume-card{padding:24px}
   footer{flex-direction:column;gap:4px;text-align:center;padding:16px 24px}
 }
@@ -220,6 +219,10 @@ footer{background:var(--bg);color:var(--ink3);padding:16px 56px;display:flex;jus
 }
 @media(min-width:961px){
   .mobile-menu{display:none}
+}
+@media(max-width:960px){
+  .contact-wrap{grid-template-columns:1fr;gap:32px;padding-top:64px;padding-bottom:64px}
+  .contact-right,.contact-left{width:100%}
 }
 </style>
 </head>
@@ -434,8 +437,8 @@ footer{background:var(--bg);color:var(--ink3);padding:16px 56px;display:flex;jus
           <p class="card-co" style="margin-top:8px">Urban Company</p>
         </div>
         <div class="card-metric-wrap">
-          <span class="metric-num"><strong>80%+</strong></span>
-          <span class="metric-label">online payment share<br/>(up from <strong>63%</strong>)</span>
+          <span class="metric-num" style="font-size:1.6rem;letter-spacing:-.02em"><strong>63%</strong><span style="color:var(--ink3);font-style:normal;font-size:1.2rem"> → </span><strong>80%+</strong></span>
+          <span class="metric-label">online payment share</span>
           <span class="metric-secondary">&#x20B9;45L</span>
           <span class="metric-secondary-label">monthly incremental revenue</span>
         </div>
